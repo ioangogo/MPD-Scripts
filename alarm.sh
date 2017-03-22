@@ -12,7 +12,9 @@ dovol(){
 }
 
 mpc -q -h $server stop
-#Work arround for a hang in MPD that i cant find the source of that is caused by but is related to changing from a stream to annother file(on samba as this is the only sinarro i have tested). a buffer problem is my current theroy                                                                                                                                                             y stoping and clearing the playlist while playing a stream
+#Work arround for a hang in MPD that i cant find the source of that is
+#caused by. but is related to changing from a stream to annother file(on samba as this is the only sinarro i have tested).
+#a buffer problem is my current theroy                                                                                                                                                             
 sleep 5
 
 mpc -q -h $server clear
